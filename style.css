@@ -1,0 +1,131 @@
+@font-face {
+  font-family: dyslexicFont;
+  src: url(open_dyslexic/OpenDyslexic-Regular.otf);
+}
+html {
+  visibility:hidden;
+}
+
+
+:root {
+  --fontFam: "josefin-sans", Times, sans;
+}
+
+ul {
+  list-style-type: none;
+  height: 5vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff8a47;
+  float: none;
+}
+
+li {
+  display: inline;
+  width: 100px;
+}
+li a{
+  font-size: 2.5vw;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  padding: 2vw 1vw;
+}
+
+li a:hover {
+  background-color: #de723d;
+}
+
+body {
+    background-color: #f4eadd;
+    font-family: var(--fontFam);
+    color: black;
+    --btnFont: dyslexicFont;
+}
+
+iframe{
+  width: 90%;
+  height: 50vw;
+  display:block;
+  margin: 0 auto;
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: 6vw;
+    color: black;
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+    float: right;
+    margin-right: 7%;
+    padding-left: 70%;
+}
+
+h2{
+  font-weight: lighter;
+  font-size: 4vw;
+  color: black;
+  float: center;
+  padding-left: 7%;
+}
+
+p{
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 3vw;
+  color: black;
+  line-height: 1.3em;
+}
+.lnk{
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 3vw;
+  color: black;
+  line-height: 1.3em;
+}
+
+img{
+  margin: 10px auto 20px;
+  display: block;
+  height: 10vw;
+  top: 4vw;
+  bottom: 0;
+
+}
+
+.dyslexia{
+  --fontFam: dyslexicFont;
+  --btnFont: "josefin-sans", Times, sans;
+}
+
+.btn {
+  font-size: 2vw;
+  font-weight: normal;
+  line-height: 1em;
+  padding-top: 0.05vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-bottom: 0.3vw;
+  margin-right: 10%;
+  background: #ffac79;
+  color: #3f3f3f;
+  border-radius: 20vw;
+  border: none;
+  width: 10%;
+  word-break: keep-all;
+  float: right;
+  font-family: var(--btnFont);
+}
+
+.proj{
+  margin-right: 7%;
+  padding-left: 0;
+}
+
+.btn:hover{
+  background: #ff8a47;
+  cursor: pointer;
+}
