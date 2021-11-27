@@ -92,11 +92,11 @@ figure{
   border: 0;
   margin: 0;
   overflow: hidden;
-
+  width: min(90%, calc(520px - 15%));
+  text-align:center;
 }
 
 img{
-  display: inline-flex;
   width: 100%;
 }
 
@@ -105,12 +105,14 @@ figcaption{
 }
 
 .column{
-  flex: 33.33%;
-  padding: 5px;
+  display: inline-block;;
+  flex: 25%;
+  padding: 0.5vw;
+  align-items: center;
 }
 
 .row {
-  display: flex;
+  text-align:center;
 }
 
 
