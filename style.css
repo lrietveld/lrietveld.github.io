@@ -44,7 +44,7 @@ body {
     --btnFont: dyslexicFont;
 }
 
-iframe{
+embed{
   width: 90%;
   height: 50vw;
   display:block;
@@ -75,14 +75,14 @@ h2{
 p{
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: black;
   line-height: 1.3em;
 }
 .lnk{
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: black;
   line-height: 1.3em;
 }
