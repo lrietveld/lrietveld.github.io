@@ -1,6 +1,13 @@
 @font-face {
   font-family: dyslexicFont;
-  src: url(open_dyslexic/OpenDyslexic-Regular.otf);
+  src: url(openDyslexic/OpenDyslexic-Regular.woff2) format('woff2'),
+       url(openDyslexic/OpenDyslexic-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: dyslexicFont;
+  src: url(openDyslexic/OpenDyslexic-Bold.woff2) format('woff2'),
+       url(openDyslexic/OpenDyslexic-Bold.woff) format('woff');
+  font-weight: bold;
 }
 html {
   visibility:hidden;
