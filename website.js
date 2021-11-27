@@ -1,4 +1,12 @@
 ﻿'use strict'
+document.getElementById("navMenu").innerHTML =
+ '<ul>'+
+ '<li><a href="index.html">home</a></li>'+
+ '<li><a href="aboutMe.html">about me</a></li>'+
+ '<li><a href="projects.html">projects</a></li>'+
+ '<li><a href="ideas.html">ideas</a></li>'+
+ '<li><a href="contact.html">contact</a></li>'+
+ '</ul>';
 
 window.addEventListener('load', (event) => {
   var page = document.getElementsByTagName("html")
