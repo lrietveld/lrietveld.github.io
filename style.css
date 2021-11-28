@@ -73,7 +73,7 @@ li a:hover {
 #check{
   display: none;
 }
-@media (max-width: 600px){
+@media (max-width: 670px){
   .checkbtn{
     display: block;
   }
@@ -123,11 +123,11 @@ h1{
     font-weight: bold;
     font-size: calc(30px + 1.5vw);
     color: black;
-    text-align: center;
+    text-align: right;
     font-weight: normal;
     float: right;
+    width: 100%;
     padding-right: 10%;
-    padding-left: 70%;
 }
 
 h2{
@@ -135,7 +135,7 @@ h2{
   font-weight: lighter;
   font-size: calc(20px + 1.5vw);
   color: black;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-right: 25px;
   width: 100%;
 }
