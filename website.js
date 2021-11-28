@@ -5,6 +5,12 @@ function scrollFunction() {
     document.getElementById("navMenu").style.top = "0";
 }
 
+/*document.getElementById("navMenu").each(function(index, element){
+  if(element.prop('href') == window.location.href){
+    element.addClass("active");
+  }
+});*/
+
 document.getElementById("navMenu").innerHTML =
 '<input type="checkbox" id="check">'+
 '<label for="check" class="checkbtn">'
