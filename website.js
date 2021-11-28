@@ -1,6 +1,15 @@
 ﻿'use strict'
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    document.getElementById("navMenu").style.top = "0";
+}
+
 document.getElementById("navMenu").innerHTML =
- '<ul>'+
+'<input type="checkbox" id="check">'+
+'<label for="check" class="checkbtn">'
++'<i class="fas fa-bars"></i>'+
+'</label>'+'<ul>'+
  '<li><a href="index.html">home</a></li>'+
  '<li><a href="aboutMe.html">about me</a></li>'+
  '<li><a href="projects.html">projects</a></li>'+

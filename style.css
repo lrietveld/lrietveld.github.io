@@ -9,39 +9,97 @@
        url(openDyslexic/OpenDyslexic-Bold.woff) format('woff');
   font-weight: bold;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 html {
   visibility:hidden;
 }
 
-
 :root {
   --fontFam: "josefin-sans", Times, sans;
+  --navHeight: 60px;
+}
+nav{
+  position: fixed;
+  top: 0;
+  background: #ff8a47;
+  width: 100%;
+  height: var(--navHeight);
 }
 
 ul {
-  list-style-type: none;
-  height: 5vw;
-  margin: 0;
-  padding: 0;
+  float: left;
+  height: calc(var(--navHeight));
   overflow: hidden;
-  background-color: #ff8a47;
-  float: none;
 }
 
-li {
-  display: inline;
-  width: 100px;
+nav ul li {
+  display: inline-block;
+  height: calc(var(--navHeight));
 }
-li a{
-  font-size: 2.5vw;
-  text-align: center;
+
+nav ul li a{
+  font-size: calc(var(--navHeight) / 2);
   color: black;
-  text-decoration: none;
-  padding: 2vw 1vw;
+  padding-top: calc(var(--navHeight) / 4);
+  padding-bottom: calc(var(--navHeight) / 4);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 li a:hover {
   background-color: #de723d;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: calc(var(--navHeight) / 2);
+  color: black;
+  float: left;
+  line-height: var(--navHeight);
+  margin-left: calc(var(--navHeight) / 4);
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 600px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffac79;
+    top: var(--navHeight);
+    z-index: 7;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  li a:hover{
+    background: #de723d;
+  }
+  #check:checked ~ ul{
+    right: 0;
+  }
 }
 
 body {
@@ -53,45 +111,44 @@ body {
 
 embed{
   width: 90%;
-  height: 50vw;
-  display:block;
+  height: 90vh;
+  display: block;
   margin: 0 auto;
-
 }
 
 h1{
+    padding-top: 60px;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: calc(30px + 1.5vw);
     color: black;
     text-align: center;
-    line-height: 1em;
     font-weight: normal;
     float: right;
-    margin-right: 7%;
-    padding-left: 70%;
+    padding-right: 10%;
+    padding-left: 150%;
 }
 
 h2{
+  margin: 15px;
   font-weight: lighter;
-  font-size: 4vw;
+  font-size: calc(20px + 1.5vw);
   color: black;
-  float: center;
-  padding-left: 7%;
+  padding-top: 100px;
+  width: 100%;
 }
 
 p{
   padding-left: 5%;
   padding-right: 5%;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(15px + 1.5vw);
   color: black;
-  line-height: 1.3em;
 }
+
 .lnk{
   padding-left: 5%;
   padding-right: 5%;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(15px + 1.5vw);
   color: black;
-  line-height: 1.3em;
 }
 
 figure{
@@ -122,16 +179,13 @@ figcaption{
   text-align:center;
 }
 
-
-
 .dyslexia{
   --fontFam: dyslexicFont;
   --btnFont: "josefin-sans", Times, sans;
 }
 
 .btn {
-  font-size: 2vw;
-  font-weight: normal;
+  font-size: 15px;
   line-height: 1em;
   padding-top: 0.05vw;
   padding-left: 0.5vw;
@@ -140,9 +194,10 @@ figcaption{
   margin-right: 10%;
   background: #ffac79;
   color: #3f3f3f;
-  border-radius: 20vw;
+  border-radius: 15px;
   border: none;
-  width: 10%;
+  width: 80px;
+  height: 40px;
   word-break: keep-all;
   float: right;
   font-family: var(--btnFont);
